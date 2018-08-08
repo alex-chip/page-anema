@@ -1,0 +1,15 @@
+.Title {
+    color: #fff;
+    margin: 0 0 1.8em ;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+
+    &:before {
+        content: "|";
+        position: absolute;
+        left: 49.5%;
+        top: 100%;
+        color: $primary-color;
+    }
+}

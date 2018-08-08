@@ -1,0 +1,24 @@
+//variables
+$gutter: 1em;
+$font-family: Arial, Helvetica, sans-serif;
+$font-size: 16px;
+
+$primary-color: hsl(20,80%,60%);
+$secondary-color: #222;
+
+$bp-s: 320px;
+$bp-m: 640px;
+$bp-l: 1024px;
+
+// incluir icons a utilizar en el proyecto
+@import "./fonts/fonts";
+
+// importar componetes
+@import "./components/basic-reset";
+@import "./components/utilities";
+@import "./components/banner";
+@import "./components/navigation";
+@import "./components/welcome";
+@import "./components/about";
+@import "./components/service";
+@import "./components/portfolio";

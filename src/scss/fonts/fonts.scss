@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "page";
+  src:url("../fonts/page.eot");
+  src:url("../fonts/page.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/page.woff") format("woff"),
+    url("../fonts/page.ttf") format("truetype"),
+    url("../fonts/page.svg#page") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "page" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "page" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\61";
+}
+.icon-home:before {
+  content: "\62";
+}
+.icon-laptop:before {
+  content: "\63";
+}
+.icon-infinite:before {
+  content: "\64";
+}
+.icon-config:before {
+  content: "\65";
+}
+.icon-comment:before {
+  content: "\66";
+}
+.icon-cloud:before {
+  content: "\67";
+}
+.icon-film:before {
+  content: "\68";
+}
+.icon-address:before {
+  content: "\69";
+}
+.icon-phone:before {
+  content: "\6a";
+}
+.icon-email:before {
+  content: "\6b";
+}
+.icon-facebook:before {
+  content: "\6c";
+}
+.icon-twitter:before {
+  content: "\6d";
+}
+.icon-google-plus:before {
+  content: "\6e";
+}
+.icon-linkedin:before {
+  content: "\6f";
+}
+.icon-youtube:before {
+  content: "\70";
+}
+.icon-instagram:before {
+  content: "\71";
+}

@@ -1,0 +1,102 @@
+.About {
+    color: #fff;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $bp-m) {
+        display: flex;
+    }
+
+    &-copy {
+        background: url('../img/2.jpg') center / cover no-repeat;
+        position: relative;
+        z-index: 50;
+        text-align: center;
+        clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%);
+        padding: 2em 0 4em;
+
+        @media screen and (min-width: $bp-m) {
+            width: 50%;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba($primary-color,.2);
+        }
+
+        &Container {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &Description {
+            position: relative;
+            font-size: .8em;
+            z-index: 50;
+            color : rgba(#fff, .6);
+        }
+    }
+
+    &-info {
+        padding: $gutter;
+
+        @media screen and (min-width: $bp-m) {
+            width: 50%;
+            padding: 2em ;
+        }
+
+        &Title{
+            font-size: .9em;
+        }
+
+        &Description {
+            font-size: .8em;
+            color : rgba(#fff, .6);
+        }
+
+        &Feature{
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 2;
+            margin-bottom: 1.5em;
+
+
+            &Title {
+                width: 90%;
+                font-size: .85em;
+                margin: 0;
+            }
+
+            &Number {
+                width: 10%;
+                margin: 0;
+            }
+            &Bottom {
+                height: 1px;
+                border-bottom: 1px solid $primary-color;
+            }
+
+            &:nth-child(1) &Bottom {
+                width: 70%;
+            }
+
+            &:nth-child(2) &Bottom {
+                width: 95%;
+            }
+
+            &:nth-child(3) &Bottom {
+                width: 90%;
+            }
+
+            &:nth-child(4) &Bottom {
+                width: 85%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+.Welcome {
+    background: $secondary-color;
+    padding: 2em 0;
+
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 70%);
+    }
+
+    &-copy {
+        text-transform: uppercase;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 2em 0;
+        position: relative;
+        z-index: 50;
+
+        @media screen and (min-width: $bp-l) {
+            width: 50%;
+        }
+    }
+
+    &-title {
+
+    }
+
+    &-description {
+        color: rgba(#FFF, .4);
+        font-size: .8em;
+        line-height: 1.5;
+    }
+}
+

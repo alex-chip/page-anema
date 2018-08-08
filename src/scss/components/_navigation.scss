@@ -1,0 +1,182 @@
+.Menu {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 60px;
+    background-color: $secondary-color;
+    padding: 0 $gutter;
+
+    @media screen and (min-width: $bp-l) {
+        background-color: transparent;
+        padding-right: 0;
+    }
+
+    &-logo {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        font-size: 1em;
+
+        @media screen and (min-width: $bp-l) {
+            font-size: 1.4em;
+        }
+
+        & span {
+            margin-left: 1.2em;
+        }
+
+        &:before {
+            content: "E";
+            position: absolute;
+            width: 25px;
+            height: 100%;
+            margin-left: .3em;
+            left: 1em;
+            background: $primary-color;
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+            text-align: center;
+
+            @media screen and (min-width: $bp-l) {
+                margin-left: .5em;
+            }
+        }
+    }
+
+    &-containerLogo {
+        width: 50%;
+        margin: 0;
+    }
+
+    &-containerMenu{
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+        @media screen and (min-width: $bp-l) {
+            height: 168.5vh;
+        }
+    }
+
+    &-toggle {
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        text-align: right;
+        font-size: 1em;
+        position: relative;
+
+        @media screen and (min-width: $bp-l) {
+            display: none;
+        }
+
+        &:before {
+            margin-right: .4em;
+        }
+    }
+
+    &-nav {
+        @media screen and (max-width: $bp-l) {
+            position: absolute;
+            top: 60px;
+            width: 90vw;
+            right: -100vw;
+            transition: all .4s;
+            z-index: 2000;
+
+            &.is-active {
+                right: 0;
+            }
+        }
+
+        @media screen and (min-width: $bp-l) {
+            display: flex;
+            height: 60%;
+            width: 100%;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        line-height: 4;
+        background-color: $secondary-color;
+        @media screen and (min-width: $bp-l){
+            display: flex;
+            width: 100%;
+            background: none;
+        }
+
+        &Item {
+            border-bottom: 1px solid rgba(#fff,.4);
+            width: 90%;
+            margin: 0 auto;
+            transition: all .4s;
+            position: relative;
+
+            @media screen and (min-width: $bp-l) {
+                border: none;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: center;
+
+                &:nth-child(1) {
+                    background: url('../img/1.jpg') 25% / cover no-repeat;
+                }
+
+                &:nth-child(2) {
+                    background: url('../img/2.jpg') center / cover no-repeat;
+                }
+                &:nth-child(3) {
+                    background: url('../img/3.jpg') center / cover no-repeat;
+                }
+
+                &:nth-child(4) {
+                    background: url('../img/4.jpg') center / cover no-repeat;
+                }
+
+                &:nth-child(5) {
+                    background: url('../img/5.jpg') center / cover no-repeat;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(#000,.5);
+                }
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                @media screen and (max-width: $bp-l) {
+                    background: rgba(#fff, .3);
+                }
+            }
+        }
+
+        &Link {
+            color: #fff;
+            cursor: pointer;
+            padding-left: $gutter;
+            display: block;
+            text-transform: uppercase;
+            font-size: .8em;
+
+            @media screen and (min-width: $bp-l) {
+                transform: rotate(-90deg);
+                font-size: 1em;
+                font-weight: bold;
+                padding-left: 1.5em;
+            }
+        }
+
+    }
+
+}

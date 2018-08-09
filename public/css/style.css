@@ -502,7 +502,11 @@ ul {
     flex-wrap: wrap; }
     .Portfolio-projectImgs img {
       width: calc(50% - 10px);
+      height: 120px;
       margin-bottom: 10px; }
+      @media screen and (min-width: 1024px) {
+        .Portfolio-projectImgs img {
+          height: 150px; } }
       .Portfolio-projectImgs img:nth-child(even) {
         margin-left: 10px; }
 

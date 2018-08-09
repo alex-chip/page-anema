@@ -64,7 +64,12 @@
 
             & img {
                 width: calc(50% - 10px);
+                height: 120px;
                 margin-bottom: 10px;
+
+                @media screen and (min-width: $bp-l) {
+                    height: 150px;
+                }
 
                 &:nth-child(even) {
                     margin-left: 10px;

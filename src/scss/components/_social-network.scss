@@ -1,0 +1,45 @@
+.Social {
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-feature {
+        color: #fff;
+        padding: $gutter;
+
+        @media screen and (min-width: $bp-m) {
+            width: 50%;
+        }
+
+        @media screen and (min-width: $bp-l) {
+            width: 25%;
+        }
+
+        &Title {
+            text-transform: uppercase;
+            font-size: .75em;
+            border-bottom: 1px solid $primary-color;
+            padding-bottom: 1em;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                left: 0;
+                top: 100%;
+                transform: translateY(-50%);
+                background-color: $primary-color;
+                clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+            }
+        }
+
+        &Imgs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 3px;
+        }
+    }
+}

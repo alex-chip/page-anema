@@ -1,0 +1,59 @@
+.Footer {
+    border-top: 1px solid rgba(#FFF, .4);
+    padding: 1em;
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: #fff;
+    }
+
+    &-logo {
+        width: 50%;
+
+        @media screen and (min-width: $bp-l) {
+            width: 25%;
+        }
+    }
+
+    &-page {
+        width: 100%;
+        order: 1;
+        text-align: center;
+        transition: all .4s;
+
+        @media screen and (min-width: $bp-l) {
+            width: 50%;
+            orphans: 0;
+        }
+
+        &Link {
+            color: #fff;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &-sociales {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (min-width: $bp-l) {
+            width: 25%;
+            order: 1;
+        }
+        &Link {
+            color: #fff;
+            display: block;
+            padding: .5em;
+            transition: all .4s;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

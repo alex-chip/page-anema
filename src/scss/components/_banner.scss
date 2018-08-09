@@ -39,13 +39,14 @@
             left: 0;
             margin-left: $gutter;
             top: 100%;
-            transform: translate(0, -170%);
+            transform: translate(0, -270%);
+            line-height: 1.2;
         }
     }
 
     &-title {
         color: $primary-color;
-        margin: 0 0 .5em;
+        margin: 0;
     }
 
     &-subtitle {

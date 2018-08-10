@@ -141,6 +141,12 @@ ul {
         height: 90vh;
         background-position: right;
         background-size: cover; } }
+  @media screen and (max-width: 1024px) {
+    .Banner-navigation {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      top: 0; } }
   .Banner-copy {
     position: absolute;
     text-align: center;

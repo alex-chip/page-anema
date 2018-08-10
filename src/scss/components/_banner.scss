@@ -26,6 +26,13 @@
     }
 
     &-navigation {
+
+        @media screen and (max-width: $bp-l) {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
     }
 
     &-copy {

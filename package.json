@@ -1,5 +1,5 @@
 {
-  "name": "frontend-components-boilerplate",
+  "name": "anem",
   "version": "1.0.0",
   "description": "Boilerplate para el desarrollo de proyectos Frontend basado en Componentes Web con metalenguajes y automatización y optimización de tareas con Scripts NPM",
   "main": "package.json",
@@ -37,7 +37,7 @@
     "build": "npm run assets && npm run min && npm run serve",
     "start": "npm run devserve"
   },
-  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "author": "Alex Chip <alexchip32@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.0.0",
